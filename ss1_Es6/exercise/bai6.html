@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    const sv1 = {
+        firstName: 'John',
+        gender: 'male',
+        degree: 'Bachelor',
+        english: 'English'
+    }
+    const sv2 = {
+        name: 'John',
+        gender: 'male',
+        degree: 'Bachelor',
+        english: 'English'
+    }
+    const getInfo = ({firstName = 'Quân', degree = 'N/A'}) => {
+        console.log(firstName);
+        console.log(degree);
+    }
+    getInfo(sv2);
+</script>
+</body>
+</html>

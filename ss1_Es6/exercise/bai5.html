@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+  // Sử dụng  Destructuring, rest, spread
+  // Cho một đối tượng
+  const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    gender: 'male',
+    occupation: 'developer',
+    nationality: 'American',
+    city: 'New York',
+    hobbies: ['reading', 'traveling', 'photography'],
+    languages: ['English', 'Spanish'],
+    education: {
+      degree: 'Bachelor',
+      major: 'Computer Science',
+      university: 'Harvard University'
+    }
+  };
+  const {firstName, gender, education: {degree}, languages: [english]} = person
+  const student = {
+    firstName,
+    gender,
+    degree,
+    english
+  }
+  console.log(student);
+</script>
+</body>
+</html>
