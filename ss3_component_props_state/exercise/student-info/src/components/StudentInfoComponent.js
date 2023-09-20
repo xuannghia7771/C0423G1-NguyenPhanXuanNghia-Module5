@@ -1,4 +1,4 @@
-function StudentInfoComponent({student}){
+const StudentInfoComponent = ({student}) => {
     return (
         <>
             <h1>Student List</h1>
@@ -10,7 +10,7 @@ function StudentInfoComponent({student}){
                     <th>Address</th>
                 </tr>
                 {student.map(each => (
-                    <tr>
+                    <tr key={each.id}>
                         <td>{each.id}</td>
                         <td>{each.name}</td>
                         <td>{each.age}</td>

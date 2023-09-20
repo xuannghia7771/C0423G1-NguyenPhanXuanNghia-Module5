@@ -1,8 +1,8 @@
 import useIncrement from "../hooks/useIncrement";
 
-export default function Count2(){
+const Count2 = () => {
     const [count, increase] = useIncrement(2);
-    return(
+    return (
         <>
             Count: {count}
             <br/>
@@ -10,3 +10,5 @@ export default function Count2(){
         </>
     );
 }
+
+export default Count2
