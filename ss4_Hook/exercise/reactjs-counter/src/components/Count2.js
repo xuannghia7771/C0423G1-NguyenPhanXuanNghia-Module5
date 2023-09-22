@@ -1,7 +1,7 @@
 import useIncrement from "../hooks/useIncrement";
 
 const Count2 = () => {
-    const [count, increase] = useIncrement(2);
+    const [count, increase] = useIncrement(2,0);
     return (
         <>
             Count: {count}
